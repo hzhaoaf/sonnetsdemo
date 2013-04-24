@@ -24,7 +24,7 @@ USA.
 The Demos
 ---------
 
-=== index-sonnets.py
+### index-sonnets.py
 
 `index-sonnets.py` takes an list of files to index on the command-line:
 
@@ -33,9 +33,9 @@ The Demos
 And indexes them with the author 'William Shakespeare' to the database
 `./xdb/sonnets.db`.  To index all the sonnets:
 
-    $ find -type f sonnets/ | xargs python index-sonnets.py
+    $ find shakespeare/ -type f  | xargs python index-sonnets.py
 
-=== search-sonnets.py
+### search-sonnets.py
 
 `query-sonnets.py` takes a query string as its first argument, an optional
 author query string for its second argument and optionally number of lines in
